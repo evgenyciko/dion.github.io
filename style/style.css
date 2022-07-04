@@ -1,0 +1,228 @@
+html body {
+    background-color: #000000;
+    overflow-x: hidden;
+}
+
+
+
+.banner-image {
+    width: 100%;
+    min-height: 100vh;
+    background-image:
+        radial-gradient(190% 60% at 50% 38%,
+            rgba(255, 181, 72, 0), 73.22%,
+            #000000 98%),
+        url(../assets/claudio-schwarz-fg-J3JhkoQo-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.banner-image .content h1 {
+    font-size: 60px;
+}
+
+.banner-image .content h4 {
+    font-size: 30px;
+}
+
+.banner-image .content h5 {
+    font-size: 30px;
+}
+/* From uiverse.io by @meermubashar */
+button {
+    width: 140px;
+    height: 45px;
+    font-size: 23px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: white;
+    font-weight: 700;
+    position: relative;
+    transition: all 0.5s;
+    z-index: 1;
+   }
+   
+   button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background-color: #E0A800;
+    z-index: -1;
+    transition: all 0.5s;
+   }
+   
+   button:hover::before {
+    width: 100%;
+   }
+   
+   button:hover {
+    color: black;
+   }
+   
+   button:active:before {
+    background: #b9b9b9;
+   }
+
+/* page about me */
+.page-about-me {
+    padding: 30px;
+    margin-top: 100px;
+    background-color: #000000;
+}
+
+.page-about-me .container {
+    color: white;
+}
+
+.content-about {
+    display: flex;
+    justify-items: center;
+    /* flex-direction: column; */
+}
+
+.gambar {
+    min-height: 300px;
+    min-width: 300px;
+    background: linear-gradient(
+    to bottom,
+    rgba(0,0,0, 0),
+    rgba(0,0,0, 100)
+    ),url(../assets/me.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.gambar img {
+    /* width: 60%; */
+    /* margin-left: 100px; */
+    /* border: 3px solid #E0A800;
+    border-radius: 50%;
+    padding: 5px; */
+}
+
+.tittle-content {
+    padding: 0 20px;
+    margin-top: 30px;
+}
+
+/* skill page */
+
+.skill-page {
+    padding: 30px;
+    margin-top: 100px;
+    background-color: #000000;
+}
+
+.skill-page .title {
+    color: white;
+}
+
+.content-skill .title-skill {
+    color: white;
+    text-align: end;
+    margin-top: 40px;
+}
+
+.bar .progress {
+    /* margin: 20px; */
+}
+
+.bar .title-bar .conteks {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    color: white;
+}
+
+.progress-bar {
+    background-color: #E0A800;
+}
+
+/* contact */
+
+.contact {
+    padding: 30px;
+    margin-top: 100px;
+    background-color: #000000;
+}
+.contact .container {
+
+}
+
+.contact .contact-title, .email {
+    color: white;
+}
+
+.contact .contact-title {
+    margin-bottom: 80px;
+    text-transform: uppercase;
+}
+
+.contact .email {
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+
+
+/* util */
+
+hr {
+    /* background-color: #009999; */
+    width: 200px;
+    height: 2px;
+    border: solid #E0A800;
+    margin: auto;
+    border-radius: 2px;
+    position: relative;
+    opacity: 100%;
+  }
+
+/* .box {
+  transform: translateX(400%);
+  transition: transform 1.5s ease;
+  overflow: hidden;  
+}
+
+.box:nth-of-type(even) {
+    transform: translateX(-400%);
+}
+
+.box.show {
+    transform: translateX(0);
+} */
+
+
+
+  @media (max-width: 991.98px) {
+    html body {
+        background-color: #000000;
+        overflow-x: visible;
+    }
+
+    .page-about-me .tittle-content {
+        text-align: center;
+    }
+
+    .skill-page .content-skill .title-skill {
+        text-align: left;
+    }
+
+    .banner-image .content h1 {
+        font-size: 35px;
+    }
+
+    .banner-image .content h4 {
+        font-size: 20px;
+    }
+
+    .banner-image .content h5 {
+        font-size: 20px;
+    }
+  }

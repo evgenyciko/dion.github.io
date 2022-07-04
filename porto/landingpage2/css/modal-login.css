@@ -1,0 +1,55 @@
+/* .modal-login {
+  height: 400px;
+  width: 500px;
+  background-color: white;
+  display: flex;
+  padding: 30px;
+  border-radius: 20px;
+  z-index: ;
+} */
+
+.modal-content {
+  padding: 30px;
+  width: 500px;
+}
+
+
+.modal-content .title-modal {
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+}
+
+.content input {
+  display: block;
+  width: 300px;
+  height: 35px;
+  padding: 0;
+  outline: none;
+  border-bottom: 1px solid;
+  border-color: transparent transparent #32acad transparent;
+  font-size: 16px;
+}
+
+.content input:focus {
+  border-color: transparent transparent #32acad transparent;
+}
+
+.content .forgot a {
+  text-decoration: none;
+  color: #4e4e4e;
+}
+
+.content .forgot a:hover {
+  color: #32acad ;
+}
+
+.content .login {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
